@@ -1,0 +1,32 @@
+Listen 8040
+
+<VirtualHost *:8040>
+        DocumentRoot /var/www
+        WSGIScriptAlias / "/var/www/trustframework4/registryvirtenv/OMS-RegistryServer/registryServer/apache/django.wsgi"
+        Alias /static "/var/www/trustframework4/registryvirtenv/OMS-RegistryServer/registryServer/static"
+        WSGIPassAuthorization On
+        ServerName registry
+        <Directory "/var/www/trustframework4/registryvirtenv/OMS-RegistryServer/registryServer">:
+                Allow from all
+                Satisfy any
+                Order allow,deny
+        </Directory>
+</VirtualHost>
+
+
+Listen 8041
+
+<VirtualHost *:8041>
+        DocumentRoot /var/www
+        WSGIScriptAlias / "/var/www/trustframework4/pdsvirtenv/OMS-PDS/oms_pds/apache/django.wsgi"
+        Alias /static "/var/www/trustframework4/pdsvirtenv/OMS-PDS/oms_pds/static"
+
+        WSGIPassAuthorization On
+        ServerName pds
+        <Directory "/var/www/trustframework4/pdsvirtenv/OMS-PDS">:
+                Allow from all
+                Satisfy any
+                Order allow,deny
+        </Directory>
+</VirtualHost>
+
