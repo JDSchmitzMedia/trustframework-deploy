@@ -28,8 +28,16 @@ The steps outlined below will help you set up a development environment that is 
 	git clone https://github.com/JDSchmitzMedia/trustframework-deploy.git
 	cd trustframework-deploy
 	sudo ./prep.sh
-	./deplocPDS.sh
 	./deplocReg.sh
+	
+You can now check to see if the RegistryServer is up and running on port 8040.
+	
+	./deplocPDS.sh
+	
+Again check to see if the PDS is running on port 8041.
+
+Then, make sure we set everything up for a full deployment.
+
 	cd /var/www/
 	sudo ln -s ~/trustframework-deploy/ trustframework4
 	sudo chown -h www-data:www-data trustframework4
