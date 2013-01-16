@@ -3,6 +3,8 @@ trustframework-deploy
 
 A set of files useful when deploying components of the OpenPDS trustframework
 
+** The setup process outlined below requires access to IDCubed's github repository
+
 
 The OpenPDS trustframework consists of 2 github projects
 
@@ -18,15 +20,13 @@ The PDS is a place for users to store data, and verify claims peers and applicat
 ## Deploying on Ubuntu 12.04 LTS
 
 	cd ~
-	mkdir MITtrustframeworkv04_1
-	cd MITtrustframeworkv04_1
-	curl -O http://dl.dropbox.com/u/65545911/deployTF_03/deployment_04.tar.gz
-	tar xzvf deployment_04.tar.gz
+	git clone https://github.com/JDSchmitzMedia/trustframework-deploy.git
+	cd trustframework-deploy
 	sudo ./prep.sh
 	./deplocPDS.sh
 	./deplocReg.sh
 	cd /var/www/
-	sudo ln -s ~/MITtrustframeworkv04_1/ trustframework4
+	sudo ln -s ~/trustframework-deploy/ trustframework4
 	sudo chown -h www-data:www-data trustframework4
 	cd trustframework4
 
@@ -34,5 +34,5 @@ The PDS is a place for users to store data, and verify claims peers and applicat
 # Deploying With Apache
 The apache configuration is in the file “trustframework4”.  If you would like to deploy with apache, copy this file to your /etc/apache2/sites-enabled/ directory.
 
-	cp ~/MITtrustframeworkv04_1/trustframework4 /etc/apache2/sites-enabled/
+	cp ~/trustframework-deploy/trustframework4 /etc/apache2/sites-enabled/
 	service apache2 restart
