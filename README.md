@@ -30,11 +30,11 @@ The steps outlined below will help you set up a development environment that is 
 	sudo ./prep.sh
 	./deplocReg.sh
 	
-You can now check to see if the RegistryServer is up and running on port 8040.  [your RegistryServer at localhost](localhost:8040)
+You can now check to see if the RegistryServer is up and running on port 8040.  [your RegistryServer at localhost](http://127.0.0.1:8040)
 	
 	./deplocPDS.sh
 	
-Again check to see if the PDS is running on port 8041.  [your PDS at localhost](localhost:8041/home)
+Again check to see if the PDS is running on port 8041.  [your PDS at localhost](http://127.0.0.1:8041/home)
 
 Then, make sure we set everything up for a full deployment.
 
