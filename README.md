@@ -1,11 +1,10 @@
 trustframework-deploy
 =====================
+NOTE: The setup process outlined below requires access to IDCubed's github repository
 
-A set of files useful when deploying components of the OpenPDS trustframework
+trustframework-deploy is a set of files useful when deploying components of the OpenPDS trustframework
 
-** The setup process outlined below requires access to IDCubed's github repository
-
-
+## Components
 The OpenPDS trustframework consists of 2 github projects
 
 ### 1) OMS-RegistryServer 
