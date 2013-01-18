@@ -1,6 +1,6 @@
 #trustframework-deploy 
 
-This project is a set of files useful when deploying components of the OpenPDS trustframework
+This project is a set of files useful when deploying components of the OpenPDS trustframework, which was developed by Sandy Pentland's group at the MIT Media Lab as a means of collecting data, and giving it back to the users.
 
 NOTE: The setup process outlined below requires access to IDCubed's github repository
 
