@@ -30,6 +30,12 @@ The steps outlined below will help you set up a development environment that is 
 	sudo ./prep.sh
 	./deplocReg.sh
 	
+	Look for
+	Development server is running at http://0.0.0.0:8040/
+	Quit the server with CONTROL-C.
+	
+	If you are running this on an environment other than your local environment, you will need to find a static IP address for your machine.
+
 You can now check to see if the RegistryServer is up and running on port 8040.  [your RegistryServer at localhost](http://127.0.0.1:8040)
 	
 	./deplocPDS.sh
