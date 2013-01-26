@@ -25,6 +25,7 @@ The PDS is a place for users to store data, and verify claims peers and applicat
 The steps outlined below will help you set up a development environment that is easily extended onto a apache "production" type environment if you so choose.
 
 	cd ~
+	sudo apt-get install git
 	git clone https://github.com/JDSchmitzMedia/trustframework-deploy.git
 	cd trustframework-deploy
 	sudo ./prep.sh
