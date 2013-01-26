@@ -68,3 +68,23 @@ The trustframework is in the process of integrating with OpenID Connect.  To pre
 	sudo vi /etc/environment
 	JAVA_HOME="/usr/lib/jvm/java-6-openjdk-amd64"
 	JRE_HOME="$JAVA_HOME/jre"
+	
+	sudo apt-get install tomcat7 tomcat7-admin
+	sudo vi /etc/environment
+	# default settings on Ubuntu
+	CATALINA_HOME="/usr/share/tomcat7"
+	CATALINA_BASE="/var/lib/tomcat7"
+	sudo ln -s /var/lib/tomcat7/logs /usr/share/tomcat7/logs
+	sudo vi /etc/default/tomcat7
+	
+Find the line:
+
+	#AUTHBIND=no
+
+Then remove the comment and replace no by yes.
+	
+	sudo ufw allow 80
+	sudo ufw allow 443
+
+	sudo service tomcat7 stop
+	sudo service tomcat7 start
