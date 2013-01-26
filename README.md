@@ -56,3 +56,15 @@ The apache configuration is in the file “trustframework4”.  If you would lik
 
 	cp ~/trustframework-deploy/trustframework4 /etc/apache2/sites-enabled/
 	service apache2 restart
+
+
+
+### OpenID Connect
+
+The trustframework is in the process of integrating with OpenID Connect.  To prepare for OpenID Connect's installation:
+	
+	sudo apt-get install openjdk-6-jre
+	sudo apt-get update
+	sudo vi /etc/environment
+	JAVA_HOME="/usr/lib/jvm/java-6-openjdk-amd64"
+	JRE_HOME="$JAVA_HOME/jre"
