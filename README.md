@@ -2,7 +2,7 @@
 
 This project is a set of files useful when deploying components of the OpenPDS trustframework, which was developed by Sandy Pentland's group at the MIT Media Lab as a means of collecting data, and giving it back to the users.
 
-NOTE: The setup process outlined below requires access to IDCubed's github repository
+NOTE: The setup process outlined below requires ssh access to IDCubed's github repository. Follow https://help.github.com/articles/generating-ssh-keys for details on installing a key.
 
 
 
