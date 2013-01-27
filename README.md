@@ -45,10 +45,12 @@ Again check to see if the PDS is running on port 8041.  [your PDS at localhost](
 
 Then, make sure we set everything up for a full deployment.
 
+	sudo chown www-data:www-data ~/trustframework-deploy
 	cd /var/www/
 	sudo ln -s ~/trustframework-deploy/ trustframework4
 	sudo chown -h www-data:www-data trustframework4
 	cd trustframework4
+	sudo chmod 777 test.db
 
 
 ### Apache
