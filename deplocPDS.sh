@@ -7,7 +7,7 @@ apt-get update
 virtualenv pdsvirtenv
 cd pdsvirtenv
 source bin/activate
-git clone git@github.com:IDCubed/OMS-PDS.git -b MITv0.4
+git clone git@github.com/JDSchmitzMedia/OMD-PDS.git
 cd OMS-PDS
 pip install -r conf/requirements.txt
 python manage.py syncdb
