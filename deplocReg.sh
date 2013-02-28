@@ -4,7 +4,7 @@ apt-get install mysql-server mysql-client libmysqlclient-dev
 virtualenv registryvirtenv
 cd registryvirtenv
 source bin/activate
-git clone git@github.com:IDCubed/OMS-RegistryServer.git -b MITv0.4
+git clone git@github.com:JDSchmitzMedia/OMS-RegistryServer.git
 cd OMS-RegistryServer
 pip install -r conf/requirements.txt
 cd registryServer
